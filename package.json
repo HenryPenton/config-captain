@@ -61,7 +61,7 @@
   "bugs": {
     "url": "https://github.com/HenryPenton/config-captain/issues"
   },
-  "homepage": "https://github.com/HenryPenton/config-captain/tree/main/projects/config-captain#readme",
+  "homepage": "https://github.com/HenryPenton/config-captain/tree/main",
   "devDependencies": {
     "@stryker-mutator/core": "9.x",
     "@stryker-mutator/jest-runner": "9.x",
