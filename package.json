@@ -48,7 +48,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HenryPenton/pentonopolis.git"
+    "url": "git+https://github.com/HenryPenton/config-captain.git"
   },
   "keywords": [
     "config",
@@ -59,9 +59,9 @@
   "author": "Henry Penton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HenryPenton/pentonopolis/issues"
+    "url": "https://github.com/HenryPenton/config-captain/issues"
   },
-  "homepage": "https://github.com/HenryPenton/pentonopolis/tree/main/projects/config-captain#readme",
+  "homepage": "https://github.com/HenryPenton/config-captain/tree/main/projects/config-captain#readme",
   "devDependencies": {
     "@stryker-mutator/core": "9.x",
     "@stryker-mutator/jest-runner": "9.x",
