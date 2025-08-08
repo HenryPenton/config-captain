@@ -1,0 +1,4 @@
+pnpm lint:check
+pnpm prettier:check
+
+pnpm test

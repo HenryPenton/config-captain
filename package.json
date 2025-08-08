@@ -1,0 +1,80 @@
+{
+  "name": "config-captain",
+  "version": "2.1.2",
+  "description": "A dependency injectable configuration object",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dependencies:check": "pnpm outdated --json > outdated.json || true",
+    "deploy": "pnpm publish",
+    "lint:check": "eslint",
+    "lint": "eslint --fix",
+    "mutate": "stryker run -c stryker.config.json --concurrency 8",
+    "prettier:check": "prettier --check src/*",
+    "prettier": "prettier --write src/*",
+    "release-major": "pnpm version major",
+    "release-minor": "pnpm version minor",
+    "release-patch": "pnpm version patch",
+    "tarball": "pnpm pack",
+    "test:compile": "tsc --project tsconfig-test.json",
+    "test:coverage": "jest --coverage",
+    "test": "jest",
+    "tag:current": "git tag $npm_package_name@$npm_package_version"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(t|j)sx?$": "@swc/jest"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/mockingFunctions/mocks.ts",
+      "<rootDir>/old"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec|steps))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "restoreMocks": true,
+    "clearMocks": true,
+    "resetMocks": true
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenryPenton/pentonopolis.git"
+  },
+  "keywords": [
+    "config",
+    "captain",
+    "dependency",
+    "injection"
+  ],
+  "author": "Henry Penton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HenryPenton/pentonopolis/issues"
+  },
+  "homepage": "https://github.com/HenryPenton/pentonopolis/tree/main/projects/config-captain#readme",
+  "devDependencies": {
+    "@stryker-mutator/core": "9.x",
+    "@stryker-mutator/jest-runner": "9.x",
+    "@stryker-mutator/typescript-checker": "9.x",
+    "@swc/core": "1.x",
+    "@eslint/js": "9.x",
+    "@swc/jest": "0.2.x",
+    "prettier": "3.x",
+    "globals": "16.x",
+    "husky": "9.x",
+    "@types/jest": "30.x",
+    "jest": "30.x",
+    "typescript-eslint": "8.x",
+    "typescript": "5.x"
+  }
+}
