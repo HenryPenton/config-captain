@@ -1,5 +1,8 @@
 # README
 
+![Monorepo Build](https://github.com/HenryPenton/config-captain/actions/workflows/mutate.yml/badge.svg)
+![Continuous Deploy](https://github.com/HenryPenton/config-captain/actions/workflows/test.yml/badge.svg)
+
 Config Captain is designed to be a dependency injectable environment configuration object that can make helpful suggestions as to what configuration you have loaded.
 
 ```javascript
